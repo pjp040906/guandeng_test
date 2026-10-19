@@ -1,0 +1,64 @@
+{
+  "data_quality": {
+    "sha256": "47a96ee984a3da82ef4b49c65d11417f3adac8a4fdd36e817c80023ef5fd58fc",
+    "source_rows": 1303,
+    "exact_duplicate_rows_removed": 62,
+    "unique_rows": 1241,
+    "labeled_rows": 1191,
+    "interrupted_rows_excluded": 50,
+    "failures": 150,
+    "overall_failure_rate": 0.12594458438287154,
+    "period_utc": [
+      "2026-08-31 23:03:00+00:00",
+      "2026-09-07 13:57:00+00:00"
+    ]
+  },
+  "rule": {
+    "stock_age_at_least_min": 18,
+    "book_stock_qty_at_most": 3,
+    "logic": "OR"
+  },
+  "train": {
+    "records": 833,
+    "failures": 92,
+    "flagged": 287,
+    "caught_failures": 79,
+    "missed_failures": 13,
+    "precision": 0.27526132404181186,
+    "recall": 0.8586956521739131,
+    "baseline_cost_min": 11040,
+    "policy_cost_min": 5004,
+    "saved_min": 6036,
+    "saving_rate": 0.5467391304347826
+  },
+  "holdout": {
+    "records": 358,
+    "failures": 58,
+    "flagged": 109,
+    "caught_failures": 50,
+    "missed_failures": 8,
+    "precision": 0.45871559633027525,
+    "recall": 0.8620689655172413,
+    "baseline_cost_min": 6960,
+    "policy_cost_min": 2268,
+    "saved_min": 4692,
+    "saving_rate": 0.6741379310344827
+  },
+  "holdout_saved_min_bootstrap_95pct": [
+    3300.0,
+    6132.0
+  ],
+  "all_labeled_descriptive_only": {
+    "records": 1191,
+    "failures": 150,
+    "flagged": 396,
+    "caught_failures": 129,
+    "missed_failures": 21,
+    "precision": 0.32575757575757575,
+    "recall": 0.86,
+    "baseline_cost_min": 18000,
+    "policy_cost_min": 7272,
+    "saved_min": 10728,
+    "saving_rate": 0.596
+  }
+}
